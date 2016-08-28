@@ -1,0 +1,12 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+  MainClass.cpp
+  window.cpp
+src\graphics\window.cpp(51): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  0 of 20 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    9 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'B:\C Development\Projects\NebulousGameEngine\NebulousGameEngine\bin\Release\vc120.pdb'; linking object as if no debug info
+  NebulousGameEngine.vcxproj -> B:\C Development\Projects\NebulousGameEngine\NebulousGameEngine\bin\Release\NebulousGameEngine.exe

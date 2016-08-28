@@ -1,8 +1,8 @@
 #include "src\graphics\window.h"
 
-// ---------------------------
-// NEBULOUS GAME ENGINE v4.0.1
-// ---------------------------
+// ----------------------------
+// NEBULOUS GAME ENGINE v4.0.2a
+// ----------------------------
 
 void printSpecs();
 

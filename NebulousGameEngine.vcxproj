@@ -71,10 +71,10 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>$(SolutionDir)Dependencies\GLEW\;$(SolutionDir)Dependencies\GLFW;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)Dependencies\GLFW\include;$(SolutionDir)Dependencies\GLEW\include;$(IncludePath)</IncludePath>
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\$(Configuration)\process\</IntDir>
+    <LibraryPath>$(SolutionDir)NebulousGameEngine\lib\GLEW\;$(SolutionDir)NebulousGameEngine\lib\GLFW\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)NebulousGameEngine\lib\GLEW\include;$(SolutionDir)NebulousGameEngine\lib\GLFW\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)NebulousGameEngine\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)NebulousGameEngine\bin\$(Configuration)\process\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
