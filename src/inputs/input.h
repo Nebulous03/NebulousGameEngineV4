@@ -4,7 +4,7 @@
 #include <GLFW\glfw3.h>
 
 namespace NebulousEngine {
-	namespace Input {
+	namespace Inputs {
 
 #define MAX_BUTTONS	32
 #define MAX_KEYS	1024

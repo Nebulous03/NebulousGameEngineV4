@@ -2,7 +2,7 @@
 #include "input.h"
 
 namespace NebulousEngine {
-	namespace Input {
+	namespace Inputs {
 
 		bool Input::keyPressed(unsigned int keycode) {
 			if (keycode <= MAX_KEYS)
