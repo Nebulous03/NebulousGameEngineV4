@@ -48,7 +48,7 @@ namespace NebulousEngine { namespace Graphics {
 	}
 
 	bool Window::closed() const {
-		return glfwWindowShouldClose(m_window);
+		return glfwWindowShouldClose(m_window) == 1;
 	}
 
 	int Window::getWidth() const {
