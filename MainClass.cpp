@@ -4,6 +4,8 @@
 // NEBULOUS GAME ENGINE v4.0.2a
 // ----------------------------
 
+//Testing from another PC...
+
 void printSpecs();
 
 int main()
