@@ -159,9 +159,11 @@
   <ItemGroup>
     <ClCompile Include="MainClass.cpp" />
     <ClCompile Include="src\graphics\window.cpp" />
+    <ClCompile Include="src\input\Input.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\graphics\window.h" />
+    <ClInclude Include="src\input\input.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

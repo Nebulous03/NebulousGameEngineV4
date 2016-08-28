@@ -16,16 +16,16 @@ namespace NebulousEngine { namespace Graphics {
 			int m_width, m_height;
 			GLFWwindow *m_window;
 			
+			bool init();
+
 			static bool m_keys[MAX_KEYS];
 			static bool m_buttons[MAX_BUTTONS];
 			static double mx, my;
 
 			friend static void windowResize(GLFWwindow *window, int width, int height);
 			friend static void key_callback(GLFWwindow *window, int key, int scancode, int action, int mods);
-			friend static void button_callback(GLFWwindow *window, int button,  int action, int mods);
+			friend static void button_callback(GLFWwindow *window, int button, int action, int mods);
 			friend static void cursor_callback(GLFWwindow *window, double xpos, double ypos);
-			
-			bool init();
 
 		public:
 			Window(const char *title, int width, int height);
@@ -34,9 +34,11 @@ namespace NebulousEngine { namespace Graphics {
 			void update();
 			void clear() const;
 
-			static bool keyPressed(unsigned int keycode);
-			static bool buttonPressed(unsigned int keycode);
-			static void getMousePos(double& x, double& y);
+			static bool getKeyAt(int i);
+			static bool getButtonAt(int i);
+
+			static double getMouseX();
+			static double getMouseY();
 
 			int getWidth() const;
 			int getHeight() const;

@@ -1,7 +1,8 @@
 #include "src\graphics\window.h"
+#include "src\input\input.h"
 
 // ----------------------------
-// NEBULOUS GAME ENGINE v4.0.2a
+// NEBULOUS GAME ENGINE v4.0.4a
 // ----------------------------
 
 //Testing from another PC...
@@ -24,15 +25,15 @@ int main()
 	while (!window.closed()) {
 		window.clear();
 		window.update();
-		if(window.keyPressed(GLFW_KEY_SPACE))
+		if(Input::Input::keyPressed(GLFW_KEY_SPACE))
 			std::cout << "SPACE BAR" << std::endl;
-		if (window.buttonPressed(GLFW_MOUSE_BUTTON_1)) {
+		if (Input::Input::buttonPressed(GLFW_MOUSE_BUTTON_1)) {
 			std::cout << "BUTTON ONE" << std::endl;
-			window.getMousePos(x, y);
+			Input::Input::getMousePos(x, y);
 			std::cout << x << ", " << y << std::endl; }
-		if (window.buttonPressed(GLFW_MOUSE_BUTTON_2))
+		if (Input::Input::buttonPressed(GLFW_MOUSE_BUTTON_2))
 			std::cout << "BUTTON TWO" << std::endl;
-		if (window.keyPressed(GLFW_KEY_ESCAPE)) {
+		if (Input::Input::keyPressed(GLFW_KEY_ESCAPE)) {
 			std::cout << "ESCAPE" << std::endl;
 			glfwTerminate();
 			break; }

@@ -1,4 +1,5 @@
 #include "window.h"
+#include "..\input\input.h"
 
 namespace NebulousEngine { namespace Graphics {
 
@@ -64,20 +65,12 @@ namespace NebulousEngine { namespace Graphics {
 		return glfwWindowShouldClose(m_window) == 1;
 	}
 
-	int Window::getWidth() const {
-		return m_width;
-	}
-
-	int Window::getHeight() const {
-		return m_height;
-	}
-
 	void windowResize(GLFWwindow *window, int width, int height) {
 		glViewport(0, 0, width, height);
 	}
 
 	void key_callback(GLFWwindow *window, int key, int scancode, int action, int mods) {
-		Window *win = (Window*) glfwGetWindowUserPointer(window);
+		Window *win = (Window*)glfwGetWindowUserPointer(window);
 		win->m_keys[key] = action != GLFW_RELEASE;
 	}
 
@@ -92,27 +85,28 @@ namespace NebulousEngine { namespace Graphics {
 		win->my = ypos;
 	}
 
-	bool Window::keyPressed(unsigned int keycode) {
-		if (keycode <= MAX_KEYS) {
-			return m_keys[keycode];
-		} else {
-			std::cout << "Error: Keycode " << keycode << "is out of bounds." << std::endl;
-			return false;
-		}
+	bool Window::getKeyAt(int i) {
+		return m_keys[i];
 	}
 
-	bool Window::buttonPressed(unsigned int buttoncode){
-		if (buttoncode <= MAX_BUTTONS) {
-			return m_buttons[buttoncode];
-		}
-		else {
-			std::cout << "Error: Buttoncode " << buttoncode << "is out of bounds." << std::endl;
-			return false;
-		}
+	bool Window::getButtonAt(int i) {
+		return m_buttons[i];
 	}
 
-	void Window::getMousePos(double& x, double& y) {
-		x = mx;
-		y = my;
+	double Window::getMouseX() {
+		return mx;
 	}
+
+	double Window::getMouseY() {
+		return my;
+	}
+
+	int Window::getWidth() const {
+		return m_width;
+	}
+
+	int Window::getHeight() const {
+		return m_height;
+	}
+
 } }
