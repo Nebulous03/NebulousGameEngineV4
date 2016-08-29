@@ -1,5 +1,5 @@
 #include "src\graphics\window.h"
-#include "src\input\input.h"
+#include "src\inputs\input.h"
 
 // ----------------------------
 // NEBULOUS GAME ENGINE v4.0.5a

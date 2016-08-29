@@ -1,5 +1,4 @@
 #include "window.h"
-#include "..\input\input.h"
 
 namespace NebulousEngine { namespace Graphics {
 

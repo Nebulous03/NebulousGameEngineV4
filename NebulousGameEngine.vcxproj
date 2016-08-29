@@ -159,11 +159,13 @@
   <ItemGroup>
     <ClCompile Include="MainClass.cpp" />
     <ClCompile Include="src\graphics\window.cpp" />
-    <ClCompile Include="src\input\Input.cpp" />
+    <ClCompile Include="src\inputs\Input.cpp" />
+    <ClCompile Include="src\math\Vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\graphics\window.h" />
-    <ClInclude Include="src\input\input.h" />
+    <ClInclude Include="src\inputs\input.h" />
+    <ClInclude Include="src\math\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
